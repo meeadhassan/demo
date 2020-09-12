@@ -11,3 +11,11 @@ First, download the Laravel installer using Composer:
 composer global require laravel/installer
 
 
+
+
+
+API documentation 
+
+https://red-firefly-6448.postman.co/collections/6688890-6611c123-ee46-46cd-8a31-63dead369828?version=latest&workspace=09905708-45cc-46f5-830e-8e78bac220b5
+
+
