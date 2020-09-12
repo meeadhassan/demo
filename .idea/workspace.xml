@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1bb241e-ec63-4d2c-a191-55e2c3ed7722" name="Default Changelist" comment="" />
+    <list default="true" id="f1bb241e-ec63-4d2c-a191-55e2c3ed7722" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -128,6 +135,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hHslAHiH3itAiXABtkiCWbEMYi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -163,7 +171,8 @@
       <updated>1599679500691</updated>
       <workItem from="1599679501804" duration="24942000" />
       <workItem from="1599756704189" duration="13714000" />
-      <workItem from="1599821838226" duration="13788000" />
+      <workItem from="1599821838226" duration="14508000" />
+      <workItem from="1599898032718" duration="690000" />
     </task>
     <servers />
   </component>
@@ -183,10 +192,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1599861288483" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1599862180860">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1599898037602">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599862180860" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599898037602" />
     <state x="476" y="264" key="NewPhpFileDialog" timestamp="1599854679666">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -199,9 +208,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="153" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1599860954714" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1599857007235">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1599871967331">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1599857007235" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1599871967331" />
   </component>
 </project>
