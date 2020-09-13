@@ -62,13 +62,8 @@ class ProductsController extends Controller
 
     public function show(Request $request){
 
-    $product = $this->productsServices->showProduct($request);
+   return $this->productsServices->showProduct($request);
 
-    return response()->json(array('success' => true,
-            'status_code' => 200,
-            'message' => 'Product Info',
-            'data'=>$product
-        ));
     }
 
     /**

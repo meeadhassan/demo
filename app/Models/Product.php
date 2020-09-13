@@ -16,7 +16,5 @@ class Product extends Model
         'description'
     ];
 
-    public static function create(array $array)
-    {
-    }
+
 }

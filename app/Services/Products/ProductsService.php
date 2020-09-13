@@ -36,14 +36,26 @@ class ProductsService
 
     /**
      * @param $request
-     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|\Illuminate\Http\JsonResponse
      *
      */
 
     //TODO encrypt all passing id
     public static function showProduct($request)
     {
-        return Product::query()->find($request[RequestKey::ID]);
+        $product =  Product::query()->find($request[RequestKey::ID]);
+         if ($product){
+             return response()->json(array('success' => true,
+                 'status_code' => 200,
+                 'message' => 'Product Info',
+                 'data'=>$product
+             ));
+
+         }
+         else {
+          return self::failedResponse();
+
+         }
     }
 
 
@@ -51,11 +63,8 @@ class ProductsService
     {
         $product = Product::query()->find($request[RequestKey::ID]);
         if (!$product) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Product Not found',
-                'status_code' => Response::HTTP_NOT_FOUND
-            ]);
+
+            return self::failedResponse();
 
         } else {
             $product = Product::query()->where(RequestKey::ID, $request[RequestKey::ID])
@@ -78,18 +87,15 @@ class ProductsService
     public function deleteProduct($request)
     {
         $product = Product::query()->find($request[RequestKey::ID]);
-        if (!$product) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Product Not found',
-                'status_code' => Response::HTTP_NOT_FOUND
-            ]);
+        if (!$product){
+
+        return self::failedResponse();
 
         } else {
 
             Product::query()->where(RequestKey::ID, $request[RequestKey::ID])->delete();
 
-            return response()->json(array('success' => true,
+        return response()->json(array('success' => true,
                 'status_code' => 200,
                 'message' => 'Deleted Successfully',
             ));
@@ -99,5 +105,15 @@ class ProductsService
 
     }
 
+
+    private static function failedResponse(){
+
+        return response()->json([
+            'success' => false,
+            'message' => 'Product Not found',
+            'status_code' => Response::HTTP_NOT_FOUND
+        ]);
+
+    }
 
 }
